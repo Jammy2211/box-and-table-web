@@ -21,9 +21,9 @@ jobs:
     timeout-minutes: 10
     environment:
       name: github-pages
-      url: https://jammy2211.github.io/box-and-table-web/
+      url: https://jamesnightingale.net/box-and-table-web/
     env:
-      SITE_URL: https://jammy2211.github.io/box-and-table-web/
+      SITE_URL: https://jamesnightingale.net/box-and-table-web/
     steps:
       - uses: actions/checkout@v7
         with:

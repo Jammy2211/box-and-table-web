@@ -1,6 +1,6 @@
 # Box & Table — weekly website
 
-A free, public weekly menu at **https://jammy2211.github.io/box-and-table-web/**.
+A free, public weekly menu at **https://jamesnightingale.net/box-and-table-web/**.
 
 The site shows NEOG's large vegetable and fruit bags and five complete six-portion recipes, with ingredients, cooking instructions, illustrations and printing. It does not store household selections, shopping ticks, pantry or ratings. The full planner and household database remain in the separate private/local project.
 
