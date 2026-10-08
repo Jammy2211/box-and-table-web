@@ -1,0 +1,114 @@
+{
+  "week": "2026-10-07",
+  "fetchedAt": "2026-10-08T11:27:21.470Z",
+  "vegetables": [
+    {
+      "name": "potato",
+      "original": "Potatoes",
+      "origin": "Grown by us",
+      "quantity": null,
+      "alternatives": []
+    },
+    {
+      "name": "carrot",
+      "original": "Carrots",
+      "origin": "UK",
+      "quantity": null,
+      "alternatives": []
+    },
+    {
+      "name": "onion",
+      "original": "Onion",
+      "origin": "UK",
+      "quantity": null,
+      "alternatives": []
+    },
+    {
+      "name": "chard",
+      "original": "chard",
+      "origin": "Grown by us",
+      "quantity": null,
+      "alternatives": []
+    },
+    {
+      "name": "swede",
+      "original": "swede",
+      "origin": "Grown by us",
+      "quantity": null,
+      "alternatives": []
+    },
+    {
+      "name": "cavolo nero",
+      "original": "cavolo nero",
+      "origin": "Grown by us",
+      "quantity": null,
+      "alternatives": []
+    },
+    {
+      "name": "cauliflower",
+      "original": "cauliflower",
+      "origin": "UK",
+      "quantity": null,
+      "alternatives": []
+    },
+    {
+      "name": "broccoli",
+      "original": "broccoli",
+      "origin": "Grown by us",
+      "quantity": null,
+      "alternatives": []
+    }
+  ],
+  "fruit": [
+    {
+      "name": "apple",
+      "original": "Apple",
+      "origin": "Grown by us",
+      "quantity": null,
+      "alternatives": []
+    },
+    {
+      "name": "banana",
+      "original": "Bananas - Fair-trade",
+      "origin": "Dominican Republic",
+      "quantity": null,
+      "alternatives": []
+    },
+    {
+      "name": "lemon",
+      "original": "lemon",
+      "origin": "Spain",
+      "quantity": null,
+      "alternatives": []
+    },
+    {
+      "name": "grapes",
+      "original": "grapes",
+      "origin": "Spain",
+      "quantity": null,
+      "alternatives": []
+    },
+    {
+      "name": "orange",
+      "original": "orange",
+      "origin": "Spain",
+      "quantity": null,
+      "alternatives": []
+    },
+    {
+      "name": "mango",
+      "original": "Mango",
+      "origin": "Spain",
+      "quantity": null,
+      "alternatives": []
+    },
+    {
+      "name": "pear",
+      "original": "Pear",
+      "origin": "UK",
+      "quantity": null,
+      "alternatives": []
+    }
+  ],
+  "source": "neog"
+}

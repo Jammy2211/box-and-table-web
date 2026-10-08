@@ -1,0 +1,13 @@
+import { cp, mkdir, rm, writeFile } from 'node:fs/promises';
+import { readJSON, writeJSON } from './files.mjs';
+import { fingerprint } from '../lib/publication.mjs';
+import { renderPage } from '../lib/render.mjs';
+const box = await readJSON('data/box.json');
+if (!box) throw new Error('No published box. Run npm run refresh first.');
+await rm('dist', { recursive: true, force: true });
+await mkdir('dist');
+await cp('assets', 'dist/assets', { recursive: true });
+await writeFile('dist/index.html', renderPage(box));
+await writeFile('dist/.nojekyll', '');
+await writeJSON('dist/publication.json', { week: box.week, fingerprint: fingerprint(box) });
+console.log(`Built five recipes for ${box.week}.`);

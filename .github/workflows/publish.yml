@@ -1,0 +1,69 @@
+name: Update weekly box and publish
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['data/**']
+  workflow_dispatch:
+  schedule:
+    # UTC covers GMT and BST; the script checks Europe/London before fetching.
+    - cron: '17 6-22 * * 3'
+    - cron: '17 6-12 * * 4'
+concurrency:
+  group: weekly-publication
+  cancel-in-progress: false
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: https://jammy2211.github.io/box-and-table-web/
+    env:
+      SITE_URL: https://jammy2211.github.io/box-and-table-web/
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+      - run: npm test
+      - name: Check the published box
+        id: refresh
+        run: npm run refresh
+      - name: Generate the website
+        if: steps.refresh.outputs.deploy == 'true'
+        run: npm run build
+      - uses: actions/configure-pages@v6
+        if: steps.refresh.outputs.deploy == 'true'
+      - uses: actions/upload-pages-artifact@v5
+        if: steps.refresh.outputs.deploy == 'true'
+        with:
+          path: dist
+      - uses: actions/deploy-pages@v5
+        id: deployment
+        if: steps.refresh.outputs.deploy == 'true'
+      - name: Record successful publication
+        if: steps.deployment.outcome == 'success'
+        run: node scripts/mark-deployed.mjs
+      - name: Notify Jam and Kelly
+        if: steps.refresh.outputs.eligible == 'true'
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_CONVERSATION_ID: ${{ secrets.SLACK_CONVERSATION_ID }}
+        run: node scripts/notify.mjs
+      - name: Save source data and delivery receipts
+        if: always() && steps.refresh.outcome == 'success' && steps.refresh.outputs.eligible == 'true'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/box.json
+          if test -f data/delivery.json; then git add data/delivery.json; fi
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update public box and delivery status'
+            git push origin HEAD:main
+          fi
