@@ -2,17 +2,23 @@
 
 A free, public weekly menu at **https://jamesnightingale.net/box-and-table-web/**.
 
-The site shows NEOG's large vegetable and fruit bags and five complete six-portion recipes, with ingredients, cooking instructions, illustrations and printing. It does not store household selections, shopping ticks, pantry or ratings. The full planner and household database remain in the separate private/local project.
+The site shows NEOG's large vegetable and fruit bags and up to five complete six-portion recipes selected from an 18-recipe collection, with ingredients, cooking instructions and printing. It does not store household selections, shopping ticks, pantry or ratings. The full planner and household database remain in the separate private/local project.
 
 ## Automatic updates
 
-GitHub Actions checks NEOG hourly at :17 on Wednesdays (07:00–22:59 Europe/London) and Thursdays (07:00–12:59). UTC triggers cover both GMT and BST; the script filters the extra hours. GitHub schedules may be delayed, so this is not an exact-time notification service. New contents or a new publication week trigger a Pages deployment. Failed source checks leave the existing site intact. The page shows a warning when its saved week becomes stale.
+GitHub Actions checks NEOG hourly at :17 on Wednesdays (07:00–22:59 Europe/London) and Thursdays (07:00–12:59). UTC triggers cover both GMT and BST; the script filters the extra hours. GitHub schedules may be delayed, so this is not an exact-time notification service. New contents, a new publication week or changes to the selected recipes trigger a Pages deployment. Failed source checks leave the existing site intact. The page shows a warning when its saved week becomes stale.
 
 Only the public source listing, recipe code and illustrations are in this repository. No household database, credentials, ratings or personal notes are published. Standard runners in this public repository and GitHub Pages are free; there is no paid hosting service or continuously running server.
 
 Source snapshots and deployment/notification fingerprints are committed under `data/`. Unchanged scheduled checks neither redeploy nor repeat successful Slack messages. A failed deployment is retried on the next check. A failed notification retries on a subsequent check without needing another source change. If Slack accepts a message but the job dies before saving its receipt, a duplicate is possible on retry.
 
 GitHub can disable public-repository schedules after 60 days without repository activity. Weekly source commits normally keep this repository active; check the Actions tab if the source stops changing for that long.
+
+## Recipes matched to the box
+
+Each publication selects up to four vegetarian recipes and one chicken recipe using only confirmed vegetables from that week. Selection prioritises coverage of the box, then rotates dish choices by publication week. Missing or ambiguous produce is never silently substituted. The page identifies any uncovered vegetables and separates box ingredients from cupboard or shopping extras. Coverage is across the suggestions, not a guarantee about unknown bag weights.
+
+The publication fingerprint includes the complete selected recipes, so recipe-only improvements are deployed and verified too. Tests cover autumn, winter, spring and summer boxes, weekly rotation, uncertain contents and recipe/source consistency.
 
 ## Slack setup (one time)
 
@@ -37,4 +43,4 @@ python -m http.server 8080 --directory dist
 
 Source validation, same-week changes, rollback protection, DST windows, notification retries, exact-publication checks, complete recipe output and HTML escaping are covered by tests. Publishing is restricted to the main-branch workflow; pull requests do not receive Slack secrets.
 
-Recipe timings are estimates and the original adaptable recipes are not kitchen-tested. The existing dish and technique pictures were generated for Box & Table; they illustrate recipe families and can differ from a particular week's ingredients. Food storage guidance is included in each recipe. NEOG quantities are unknown until you measure your actual bags.
+Recipe timings are estimates and the original adaptable recipes are not kitchen-tested. Dish-family pictures were generated for Box & Table and can differ from a particular week's ingredients. Other recipes show ingredient panels for the actual weekly produce; cooking steps are text instructions. Food storage guidance is included in each recipe. NEOG quantities are unknown until you measure your actual bags.
