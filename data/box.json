@@ -1,6 +1,6 @@
 {
-  "week": "2026-10-14",
-  "fetchedAt": "2026-10-14T11:51:21.320Z",
+  "week": "2026-10-21",
+  "fetchedAt": "2026-10-21T11:48:02.071Z",
   "vegetables": [
     {
       "name": "potato",
@@ -24,44 +24,30 @@
       "alternatives": []
     },
     {
-      "name": "cabbage",
-      "original": "cabbage",
+      "name": "beetroot",
+      "original": "beetroot",
       "origin": "Grown by us",
       "quantity": null,
       "alternatives": []
     },
     {
-      "name": "leek",
-      "original": "leek",
+      "name": "kale",
+      "original": "kale",
+      "origin": "Grown by us",
+      "quantity": null,
+      "alternatives": []
+    },
+    {
+      "name": "pumokin",
+      "original": "pumokin",
+      "origin": "Grown by us",
+      "quantity": null,
+      "alternatives": []
+    },
+    {
+      "name": "cauliflower",
+      "original": "cauliflower",
       "origin": "UK",
-      "quantity": null,
-      "alternatives": []
-    },
-    {
-      "name": "lettuce",
-      "original": "lettuce",
-      "origin": "Grown by us",
-      "quantity": null,
-      "alternatives": []
-    },
-    {
-      "name": "tomato",
-      "original": "tomato",
-      "origin": "Grown by us",
-      "quantity": null,
-      "alternatives": []
-    },
-    {
-      "name": "spring onion",
-      "original": "salad onion",
-      "origin": "Grown by us",
-      "quantity": null,
-      "alternatives": []
-    },
-    {
-      "name": "basil",
-      "original": "basil",
-      "origin": "Grown by us",
       "quantity": null,
       "alternatives": []
     }
