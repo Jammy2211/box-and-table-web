@@ -1,6 +1,6 @@
 {
-  "week": "2026-11-04",
-  "fetchedAt": "2026-11-04T14:30:41.573Z",
+  "week": "2026-11-11",
+  "fetchedAt": "2026-11-11T14:21:24.542Z",
   "vegetables": [
     {
       "name": "potato",
@@ -24,43 +24,46 @@
       "alternatives": []
     },
     {
-      "name": "oak choi",
-      "original": "oak choi",
+      "name": "pak choi/kale",
+      "original": "Pak choi/kale",
+      "origin": "Grown by us",
+      "quantity": null,
+      "alternatives": [
+        "pak choi",
+        "kale"
+      ]
+    },
+    {
+      "name": "cauliflower",
+      "original": "cauliflower",
+      "origin": "UK/Grown by us",
+      "quantity": null,
+      "alternatives": []
+    },
+    {
+      "name": "squash",
+      "original": "squash",
       "origin": "Grown by us",
       "quantity": null,
       "alternatives": []
     },
     {
-      "name": "other",
-      "original": "other",
+      "name": "jerusalem artichoke",
+      "original": "Jerusalem artichoke",
       "origin": "Grown by us",
       "quantity": null,
       "alternatives": []
     },
     {
-      "name": "pumpkin slice",
-      "original": "pumpkin slice",
+      "name": "garlic",
+      "original": "garlic",
       "origin": "Grown by us",
       "quantity": null,
       "alternatives": []
     },
     {
-      "name": "leek",
-      "original": "leek",
-      "origin": "UK",
-      "quantity": null,
-      "alternatives": []
-    },
-    {
-      "name": "sweet potato",
-      "original": "sweet potato",
-      "origin": "Spain",
-      "quantity": null,
-      "alternatives": []
-    },
-    {
-      "name": "chilli",
-      "original": "chillies",
+      "name": "beetroot",
+      "original": "beetroot",
       "origin": "Grown by us",
       "quantity": null,
       "alternatives": []
