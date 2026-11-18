@@ -1,6 +1,6 @@
 {
-  "week": "2026-11-11",
-  "fetchedAt": "2026-11-11T14:21:24.542Z",
+  "week": "2026-11-18",
+  "fetchedAt": "2026-11-18T15:39:25.597Z",
   "vegetables": [
     {
       "name": "potato",
@@ -24,46 +24,43 @@
       "alternatives": []
     },
     {
-      "name": "pak choi/kale",
-      "original": "Pak choi/kale",
-      "origin": "Grown by us",
-      "quantity": null,
-      "alternatives": [
-        "pak choi",
-        "kale"
-      ]
-    },
-    {
-      "name": "cauliflower",
-      "original": "cauliflower",
-      "origin": "UK/Grown by us",
-      "quantity": null,
-      "alternatives": []
-    },
-    {
-      "name": "squash",
-      "original": "squash",
+      "name": "cabbage",
+      "original": "cabbage",
       "origin": "Grown by us",
       "quantity": null,
       "alternatives": []
     },
     {
-      "name": "jerusalem artichoke",
-      "original": "Jerusalem artichoke",
+      "name": "cavolo nero",
+      "original": "cavalo nero",
       "origin": "Grown by us",
       "quantity": null,
       "alternatives": []
     },
     {
-      "name": "garlic",
-      "original": "garlic",
+      "name": "leek",
+      "original": "leek",
+      "origin": "UK",
+      "quantity": null,
+      "alternatives": []
+    },
+    {
+      "name": "swede",
+      "original": "swede",
       "origin": "Grown by us",
       "quantity": null,
       "alternatives": []
     },
     {
-      "name": "beetroot",
-      "original": "beetroot",
+      "name": "elephant garlic",
+      "original": "elephant garlic",
+      "origin": "Grown by us",
+      "quantity": null,
+      "alternatives": []
+    },
+    {
+      "name": "celeriac",
+      "original": "celeriac",
       "origin": "Grown by us",
       "quantity": null,
       "alternatives": []
@@ -99,9 +96,9 @@
       "alternatives": []
     },
     {
-      "name": "pomegranate",
-      "original": "pomegranate",
-      "origin": "Spain",
+      "name": "kiwi",
+      "original": "kiwi",
+      "origin": "Greece",
       "quantity": null,
       "alternatives": []
     },
